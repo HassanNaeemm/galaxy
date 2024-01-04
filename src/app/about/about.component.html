@@ -1,0 +1,27 @@
+<button (click)="getdata()" class="btn btn-danger">Get Data</button>
+<div
+    class="table-responsive"
+>
+    <table
+        class="table table-dark"
+    >
+        <thead>
+            <tr>
+                <th scope="col">User Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Message</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="" *ngFor="let d of mylist">
+                <td scope="row">{{d.UserName}}</td>
+                <td scope="row">{{d.LastName}}</td>
+                <td scope="row">{{d.Email}}</td>
+                <td scope="row">{{d.Message}}</td>
+               
+            </tr>
+       
+        </tbody>
+    </table>
+</div>

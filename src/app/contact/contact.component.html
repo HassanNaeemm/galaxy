@@ -1,0 +1,69 @@
+
+<div class="container py-4 my-5">
+    <div class="row">
+<div class="col-lg-5 col-md-8">
+<form class="search-form">
+    <div class="input-group">
+        <input type="search"   class="form-control bg-transparent shadow-none rounded-0" placeholder="Search here">
+        <div class="input-group-append">
+            <button class="btn" type="submit">
+                <span class="fas fa-search"></span>
+            </button>
+        </div>
+    </div>
+</form>
+</div>
+</div>
+    <div class="row">
+        <div class="col-md-10">
+            <div class="contact-form bg-dark">
+                <h1 class="text-white add-letter-space mb-5">Lets Contact Us</h1>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-5">
+                                <label for="firstName" class="text-black-300">Your First Name</label>
+                                <input type="text" id="firstName" name="username" [(ngModel)]="username" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Robert Lee" required>
+                                <p class="invalid-feedback">Your first-name is required!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-5">
+                                <label for="lastName" class="text-black-300">Your Last Name</label>
+                                <input type="text" id="lastName" name="lastname" [(ngModel)]="lastname" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Anderson" required>
+                                <p class="invalid-feedback">Your last-name is required!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-5">
+                                <label for="email" class="text-black-300">E-Mail Address</label>
+                                <input name="email" type="email" id="email" [(ngModel)]="email" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="kevin.jones@mail.com" required>
+                                <p class="invalid-feedback">Your email is required!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group mb-5">
+                                <label class="text-black-300">What Is This About?</label>
+                                <select class="d-block w-100" name="list" [(ngModel)]="list">
+                                    <option value="Personal Proposal">Personal Proposal</option>
+                                    <option value="Business Purpose">Business Purpose</option>
+                                    <option value="Want to say hello">Want to say hello</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group mb-5">
+                                <label for="message"  class="text-black-300">Your message</label>
+                                <textarea name="message" [(ngModel)]="message" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Lorem Ipsum is simply dummy text of the printing and..." required></textarea>
+                                <p class="invalid-feedback">Message is required!</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <button (click)="insertrecord()" type="submit" class="btn btn-sm btn-primary">Send Now <img src="images/arrow-right.png" alt=""></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
